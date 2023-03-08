@@ -19,6 +19,7 @@
 }
 
 .WebSlide{
+  height: 110vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,11 +28,15 @@
 
 .Slide{
   width: 80%;
-  height: 100vmin;
+  height: 90%;
   background-color: #26445a;
   background: radial-gradient(circle, rgba(48,86,113,1) 15%, rgba(38,68,90,1) 100%);
-  border-radius: 100px;
+  border-radius: 5vmin;
   margin: 1vmax 0px;
+}
+
+.Slide img{
+  max-width: 75vw;
 }
 
 .slideButton{
