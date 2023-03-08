@@ -18,9 +18,20 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => slideChange(-1)}>-</button>
-      <Webslide slideNumber={slideNumber}/>
-      <button onClick={() => slideChange(1)}>+</button>
+      <div className='Info'>
+        <h1>Jonathan Tackett</h1>
+        <h2>MERN Fullstack Software Engineer</h2>
+        <div className='Info-links'>
+        <a className='App-link' href="https://docs.google.com/document/d/1MP6tb-hVue5M2fR0mDt3n75xfn0LievHw5D9QPlNK8w/edit?usp=sharing">Resume</a>
+        <a className='App-link' href="http://linkedin.com/in/jonathan-tackett-034783260 ">LinkedIn</a>
+        <a className='App-link' href="https://github.com/JonCTack/">GitHub</a>
+        </div>
+      </div>
+      <div className="WebSlide">
+        <button className='slideButton' onClick={() => slideChange(-1)}>{'<'}</button>
+        <Webslide slideNumber={slideNumber}/>
+        <button className='slideButton' onClick={() => slideChange(1)}>{'>'}</button>
+      </div>
     </div>
   );
 }

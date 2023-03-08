@@ -1,14 +1,53 @@
 .App {
   background-color: #182b39;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
 }
+
+.Info{
+  border-bottom: 2px solid #26445a;
+  padding-bottom: 1vmin;
+}
+
+.Info-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.WebSlide{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Slide{
+  width: 80%;
+  height: 100vmin;
+  background-color: #26445a;
+  background: radial-gradient(circle, rgba(48,86,113,1) 15%, rgba(38,68,90,1) 100%);
+  border-radius: 100px;
+  margin: 1vmax 0px;
+}
+
+.slideButton{
+  height: 15vmin;
+  font-size: calc(10px + 4vmin);
+  background-color:  #26445a;
+  border:0px;
+  border-radius: 12px;
+  margin: 0px;
+}
+
+.slideButton:hover{
+  color:white;
+  background-color:  #497ca1;
+}
+
 
 .App-link {
   color: #61dafb;
